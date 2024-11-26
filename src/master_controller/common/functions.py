@@ -9,4 +9,4 @@ def number_generator(count, start=0, end=100):
     :param end: The upper bound of the random values (inclusive)
     :return: List of random values
     """
-    return [random.randint(start, end) for _ in range(count)]
+    return [random.uniform(start, end) for _ in range(count)]
