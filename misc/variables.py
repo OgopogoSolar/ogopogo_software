@@ -1,3 +1,5 @@
+import sys
+from functions import *
 
 class Data_Basic:
     '''
