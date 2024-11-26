@@ -80,7 +80,10 @@ class Data_Basic:
         self.motor_temp =  motor_temp  # Motor temperature in °C
         self.brake_temp = brake_temp  # Brake temperature in °C
     
-
+    # def number_generator(self, low: int, high: int):
+    #     """Generates a random number between low and high."""
+    #     return random.randint(low, high)
+    
     def update_random_data(self):
         """Updates random data using number_generator."""
         self.__update_data__(
