@@ -24,7 +24,7 @@ class Attributes:
             self.inside_temp = inside_temp # Inside temperature in °C
             self.wind_speed = wind_speed # Wind speed in km/h
             self.wind_direction = wind_direction # Wind direction as a compass point
-            self.weather = weather # Current weather conditions
+            self.weather = weather # Current weather conditions (N, S, E, W)
 
         def __str__(self):
             return (f"Outside Temp: {self.outside_temp:.2f}°C, Inside Temp: {self.inside_temp:.2f}°C, "
