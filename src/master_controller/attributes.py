@@ -20,11 +20,11 @@ class Attributes:
         """Stores environmental telemetry data."""
         def __init__(self, outside_temp: float = 0.0, inside_temp: float = 0.0,
                      wind_speed: float = 0.0, wind_direction: str = "N/A", weather: str = "N/A"):
-            self.outside_temp = outside_temp
-            self.inside_temp = inside_temp
-            self.wind_speed = wind_speed
-            self.wind_direction = wind_direction
-            self.weather = weather
+            self.outside_temp = outside_temp # Outside temperature in °C
+            self.inside_temp = inside_temp # Inside temperature in °C
+            self.wind_speed = wind_speed # Wind speed in km/h
+            self.wind_direction = wind_direction # Wind direction as a compass point
+            self.weather = weather # Current weather conditions
 
         def __str__(self):
             return (f"Outside Temp: {self.outside_temp:.2f}°C, Inside Temp: {self.inside_temp:.2f}°C, "
