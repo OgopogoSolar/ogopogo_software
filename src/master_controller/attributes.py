@@ -1,6 +1,8 @@
 import random
 import time
 from common.functions import *
+import pandas as pd
+from datetime import datetime
 
 class Attributes:
     '''
@@ -48,13 +50,26 @@ class Attributes:
         self.brake_temp = 30.0  # Brake temperature in °C
         self.power_data = self.PowerData()
 
+        # TODO: Add a pandas DataFrame for telemetry history
+        pass
+
+    # TODO: Add a method to log telemetry data to the DataFrame
+    def log_data(self):
+        """Logs current telemetry data to the DataFrame."""
+        pass
+
+    # TODO: Add a method to save telemetry history to a CSV file
+    def save_to_csv(self, filename="telemetry_data.csv"):
+        """Saves telemetry history to a CSV file."""
+        pass
+
     def __str__(self):
         return (f"{self.battery_status}\n"
                 f"{self.environmental_data}\n"
                 f"Motor Temp: {self.motor_temp:.2f}°C, Brake Temp: {self.brake_temp:.2f}°C\n"
                 f"{self.power_data}")
     
-    # Main function for testing
+# Main function for testing
 if __name__ == "__main__":
     telemetry_data = Attributes()
 
@@ -73,10 +88,20 @@ if __name__ == "__main__":
             telemetry_data.motor_temp = number_generator(1, 0, 100)[0]
             telemetry_data.brake_temp = number_generator(1, 0, 100)[0]
 
+            # TODO: Call the log_data method here to log the telemetry data
+            # add code to call the log_data method
+
             # Clear and display the updated data
             print("\033c", end="")
             print("Live Telemetry Data:")
             print(telemetry_data)
+
+            # TODO: Optionally display the last few rows of telemetry history for testing
+            # add code to display the last few rows of the DataFrame
+
             time.sleep(0.2)  # Refresh every 0.2 seconds
     except KeyboardInterrupt:
-        print("\nTelemetry updates stopped.")
+        # TODO: Save the telemetry history to a CSV file on exit
+        # add code to save the telemetry history to a CSV file
+
+        print("Telemetry updates stopped.")
