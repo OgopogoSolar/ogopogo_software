@@ -49,19 +49,64 @@ class Attributes:
         self.motor_temp = 60.0  # Motor temperature in °C
         self.brake_temp = 30.0  # Brake temperature in °C
         self.power_data = self.PowerData()
-
+        
+        
         # TODO: Add a pandas DataFrame for telemetry history
-        pass
+        self.telemetry_history = pd.DataFrame(columns=[
+            'timestamp',          # When the data was recorded
+            'battery_temp',       # Battery temperature
+            'battery_level',      # Battery level
+            'outside_temp',       # Outside temperature
+            'inside_temp',        # Inside temperature
+            'wind_speed',         # Wind speed
+            'wind_direction',     # Wind direction
+            'weather',            # Weather conditions
+            'input_power',        # Input power
+            'output_power',       # Output power
+            'motor_temp',         # Motor temperature
+            'brake_temp'          # Brake temperature
+])
 
     # TODO: Add a method to log telemetry data to the DataFrame
     def log_data(self):
         """Logs current telemetry data to the DataFrame."""
-        pass
+        current_data = {
+            'timestamp': datetime.now(),
+            'battery_temp': self.battery_status.battery_temp,
+            'battery_level': self.battery_status.battery_level,
+            'outside_temp': self.environmental_data.outside_temp,
+            'inside_temp': self.environmental_data.inside_temp,
+            'wind_speed': self.environmental_data.wind_speed,
+            'wind_direction': self.environmental_data.wind_direction,
+            'weather': self.environmental_data.weather,
+            'input_power': self.power_data.input_power,
+            'output_power': self.power_data.output_power,
+            'motor_temp': self.motor_temp,
+            'brake_temp': self.brake_temp
+        }
+        self.telemetry_history = pd.concat([
+            self.telemetry_history, 
+            pd.DataFrame([current_data])
+        ], ignore_index=True)
 
     # TODO: Add a method to save telemetry history to a CSV file
     def save_to_csv(self, filename="telemetry_data.csv"):
         """Saves telemetry history to a CSV file."""
-        pass
+            def save_to_csv(self, filename="telemetry_data.csv"):
+        """Saves all our collected data to a CSV file so we can look at it later."""
+        try:
+            self.telemetry_history.to_csv(filename, index=False)
+            print(f"All data saved to {filename}")
+        except Exception as e:
+            print(f"Error fail saving data to: {str(e)}")
+
+    def get_telemetry(self):
+        """Packages up the important stuff for the alert system to check."""
+        return {
+            "battery_temp": self.battery_status.battery_temp,
+            "battery_level": self.battery_status.battery_level,
+            "motor_temp": self.motor_temp
+        }
 
     def __str__(self):
         return (f"{self.battery_status}\n"
@@ -90,6 +135,8 @@ if __name__ == "__main__":
 
             # TODO: Call the log_data method here to log the telemetry data
             # add code to call the log_data method
+            telemetry_data.log_data()
+
 
             # Clear and display the updated data
             print("\033c", end="")
@@ -103,5 +150,6 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         # TODO: Save the telemetry history to a CSV file on exit
         # add code to save the telemetry history to a CSV file
+        telemetry_data.save_to_csv()
 
         print("Telemetry updates stopped.")
