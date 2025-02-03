@@ -1,0 +1,41 @@
+2025-02-03 11:47:43,317 - __main__ - INFO - AlertSystem initialized
+2025-02-03 11:47:43,318 - __main__ - WARNING - WARNING: Low battery level (19.7%) below threshold (20.0%)
+2025-02-03 11:47:43,318 - __main__ - WARNING - WARNING: High wind speed (135.6 km/h) exceeds threshold (100.0 km/h)
+2025-02-03 11:47:43,318 - __main__ - WARNING - WARNING: Power imbalance detected (3.5 kW) exceeds threshold (1.0 kW)
+2025-02-03 11:47:43,318 - __main__ - INFO - Displayed 3 active alerts
+2025-02-03 11:47:44,318 - __main__ - WARNING - WARNING: Power imbalance detected (8.2 kW) exceeds threshold (1.0 kW)
+2025-02-03 11:47:44,318 - __main__ - INFO - Displayed 4 active alerts
+2025-02-03 11:47:45,319 - __main__ - WARNING - WARNING: Power imbalance detected (5.2 kW) exceeds threshold (1.0 kW)
+2025-02-03 11:47:45,319 - __main__ - INFO - Displayed 5 active alerts
+2025-02-03 11:47:46,319 - __main__ - WARNING - WARNING: Motor temperature (83.3°C) exceeds threshold (80.0°C)
+2025-02-03 11:47:46,320 - __main__ - WARNING - WARNING: Power imbalance detected (6.7 kW) exceeds threshold (1.0 kW)
+2025-02-03 11:47:46,320 - __main__ - INFO - Displayed 7 active alerts
+2025-02-03 11:47:47,320 - __main__ - WARNING - WARNING: High wind speed (115.1 km/h) exceeds threshold (100.0 km/h)
+2025-02-03 11:47:47,320 - __main__ - WARNING - WARNING: Power imbalance detected (7.9 kW) exceeds threshold (1.0 kW)
+2025-02-03 11:47:47,321 - __main__ - INFO - Displayed 9 active alerts
+2025-02-03 11:47:48,321 - __main__ - WARNING - WARNING: High outside temperature (49.1°C) exceeds threshold (45.0°C)
+2025-02-03 11:47:48,321 - __main__ - WARNING - WARNING: Power imbalance detected (1.0 kW) exceeds threshold (1.0 kW)
+2025-02-03 11:47:48,321 - __main__ - INFO - Displayed 11 active alerts
+2025-02-03 11:47:49,321 - __main__ - WARNING - WARNING: Power imbalance detected (4.0 kW) exceeds threshold (1.0 kW)
+2025-02-03 11:47:49,322 - __main__ - INFO - Displayed 12 active alerts
+2025-02-03 11:47:50,322 - __main__ - WARNING - WARNING: Battery temperature (99.5°C) exceeds threshold (60.0°C)
+2025-02-03 11:47:50,322 - __main__ - WARNING - WARNING: Power imbalance detected (1.6 kW) exceeds threshold (1.0 kW)
+2025-02-03 11:47:50,323 - __main__ - INFO - Displayed 14 active alerts
+2025-02-03 11:47:51,323 - __main__ - WARNING - WARNING: Low battery level (4.8%) below threshold (20.0%)
+2025-02-03 11:47:51,323 - __main__ - WARNING - WARNING: High wind speed (138.8 km/h) exceeds threshold (100.0 km/h)
+2025-02-03 11:47:51,323 - __main__ - WARNING - WARNING: Power imbalance detected (2.0 kW) exceeds threshold (1.0 kW)
+2025-02-03 11:47:51,323 - __main__ - INFO - Displayed 17 active alerts
+2025-02-03 11:47:52,324 - __main__ - WARNING - WARNING: Battery temperature (86.4°C) exceeds threshold (60.0°C)
+2025-02-03 11:47:52,324 - __main__ - WARNING - WARNING: Low battery level (11.5%) below threshold (20.0%)
+2025-02-03 11:47:52,324 - __main__ - WARNING - WARNING: Power imbalance detected (4.2 kW) exceeds threshold (1.0 kW)
+2025-02-03 11:47:52,324 - __main__ - INFO - Displayed 20 active alerts
+2025-02-03 11:47:53,325 - __main__ - WARNING - WARNING: Motor temperature (86.9°C) exceeds threshold (80.0°C)
+2025-02-03 11:47:53,325 - __main__ - WARNING - WARNING: High outside temperature (49.9°C) exceeds threshold (45.0°C)
+2025-02-03 11:47:53,325 - __main__ - WARNING - WARNING: Power imbalance detected (1.8 kW) exceeds threshold (1.0 kW)
+2025-02-03 11:47:53,325 - __main__ - INFO - Displayed 23 active alerts
+2025-02-03 11:47:54,326 - __main__ - WARNING - WARNING: Battery temperature (73.2°C) exceeds threshold (60.0°C)
+2025-02-03 11:47:54,326 - __main__ - WARNING - WARNING: Power imbalance detected (8.7 kW) exceeds threshold (1.0 kW)
+2025-02-03 11:47:54,327 - __main__ - INFO - Displayed 25 active alerts
+2025-02-03 11:47:55,327 - __main__ - WARNING - WARNING: Battery temperature (79.8°C) exceeds threshold (60.0°C)
+2025-02-03 11:47:55,327 - __main__ - WARNING - WARNING: Low outside temperature (-39.2°C) below threshold (-30.0°C)
+2025-02-03 11:47:55,328 - __main__ - INFO - Displayed 27 active alerts
