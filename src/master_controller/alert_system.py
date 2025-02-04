@@ -46,7 +46,7 @@ class AlertSystem:
             
             # Battery level check
             if telemetry_data.battery_status.battery_level < self.thresholds["battery_level_low"]:
-                alert_msg = f"WARNING: Low battery level ({telemetry_data.battery_status.battery_level:.1f}%) below threshold ({self.thresholds['battery_level_low']}%)"
+                alert_msg = f"Low battery level ({telemetry_data.battery_status.battery_level:.1f}%) below threshold ({self.thresholds['battery_level_low']}%)"
                 if alert_msg not in self.active_alerts:
                     self.active_alerts.append(alert_msg)
                     self.logger.warning(alert_msg)
@@ -72,7 +72,7 @@ class AlertSystem:
                     self.active_alerts.append(alert_msg)
                     self.logger.warning(alert_msg)
             elif telemetry_data.environmental_data.outside_temp < self.thresholds["outside_temp_low"]:
-                alert_msg = f"WARNING: Low outside temperature ({telemetry_data.environmental_data.outside_temp:.1f}°C) below threshold ({self.thresholds['outside_temp_low']}°C)"
+                alert_msg = f"Low outside temperature ({telemetry_data.environmental_data.outside_temp:.1f}°C) below threshold ({self.thresholds['outside_temp_low']}°C)"
                 if alert_msg not in self.active_alerts:
                     self.active_alerts.append(alert_msg)
                     self.logger.warning(alert_msg)
