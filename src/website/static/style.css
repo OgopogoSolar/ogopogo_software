@@ -334,7 +334,7 @@ nav a:hover{
 }
 
 .sponsor-item img { 
-    width: auto; 
+    width: 200px; 
     height: 200px;
     display: inline-block;
     border-radius: 5%;
