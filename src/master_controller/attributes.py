@@ -51,16 +51,39 @@ class Attributes:
         self.power_data = self.PowerData()
 
         # TODO: Add a pandas DataFrame for telemetry history
-        pass
+
+        self.telemetry_history = pd.DataFrame(columns=["Battery Temp", "Battery Level", 
+                                                       "Outside Temp", "Inside Temp", 
+                                                       "Wind Speed","Wind Direction","Weather",
+                                                       "Input Power","Output Power",
+                                                         "Motor Temp", "Brake Temp"])
+
+
 
     # TODO: Add a method to log telemetry data to the DataFrame
     def log_data(self):
         """Logs current telemetry data to the DataFrame."""
-        pass
+        new_data = {
+        "Battery Temp": [self.battery_status.battery_temp],
+        "Battery Level": [self.battery_status.battery_level],
+        "Outside Temp": [self.environmental_data.outside_temp],
+        "Inside Temp": [self.environmental_data.inside_temp],
+        "Wind Speed":[self.environmental_data.wind_speed],
+        "Wind Direction":[self.environmental_data.wind_direction],
+        "Weather" :[self.environmental_data.weather],
+        "Input Power": [self.power_data.input_power],
+        "Output Power":[self.power_data.output_power],
+        "Motor Temp":[self.motor_temp],
+        "Brake Temp":[self.brake_temp]
+          }
+        new_frame = pd.DataFrame(new_data)
+        self.telemetry_history = pd.concat([self.telemetry_history,new_frame],ignore_index=True)
+        
 
     # TODO: Add a method to save telemetry history to a CSV file
     def save_to_csv(self, filename="telemetry_data.csv"):
         """Saves telemetry history to a CSV file."""
+        self.telemetry_history.to_csv(filename)
         pass
 
     def __str__(self):
@@ -89,19 +112,33 @@ if __name__ == "__main__":
             telemetry_data.brake_temp = number_generator(1, 0, 100)[0]
 
             # TODO: Call the log_data method here to log the telemetry data
+            telemetry_data.log_data()
+            #telemetry_data.save_to_csv() ### DEBUG PURPOSES
             # add code to call the log_data method
 
             # Clear and display the updated data
             print("\033c", end="")
             print("Live Telemetry Data:")
             print(telemetry_data)
+            
 
             # TODO: Optionally display the last few rows of telemetry history for testing
             # add code to display the last few rows of the DataFrame
 
-            time.sleep(0.2)  # Refresh every 0.2 seconds
+            print(telemetry_data.telemetry_history.tail(5)) 
+
+            
+
+            
+
+
+
+            time.sleep(0.2)  # Refresh every 0.2 seconds 
     except KeyboardInterrupt:
         # TODO: Save the telemetry history to a CSV file on exit
         # add code to save the telemetry history to a CSV file
-
+        telemetry_data.save_to_csv()
         print("Telemetry updates stopped.")
+
+        #BUG: not sure why but the csv always updates "more" than the index i stop at, 
+        # eg if "live telemetry" stops at idx 40 (when i stop the program), csv would stop at idx 42, etc
