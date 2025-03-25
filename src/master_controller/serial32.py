@@ -5,7 +5,7 @@ import time
 from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QTextEdit, QLabel
 
 ports = [
-    '/dev/tty10'
+    'COM4' #changed it to my port
 ]
 
 class SerialMonitor(QWidget):
@@ -63,10 +63,19 @@ class SerialMonitor(QWidget):
                 self.ser.close()
             except serial.SerialException:
                 continue
+    def send_request(self):
+        """Send a command to trigger MCU response."""
+        if self.ser and self.ser.is_open:
+            self.ser.write(b'\x01')  # Same command as your earlier code
+            self.data_display.append("Sent request: 0x01")
+            time.sleep(0.1)  # Brief delay for MCU to respond        
 
     def read_serial(self):
         while self.running and self.ser:
             try:
+
+                self.send_request()#send data first, 
+
                 if self.ser.in_waiting > 0:
                     data = self.ser.readline().decode('utf-8').strip()
                     try:
@@ -83,3 +92,4 @@ if __name__ == '__main__':
     window = SerialMonitor()
     window.show()
     sys.exit(app.exec())
+    

@@ -1,0 +1,184 @@
+[33mcommit 09779c3e41847184e58bf4d8e460a8d90e62ad3d[m[33m ([m[1;36mHEAD -> [m[1;32muser/orangepylon[m[33m, [m[1;31morigin/user/orangepylon[m[33m)[m
+Author: OrangepylonA <albertzhu048@gmail.com>
+Date:   Mon Jan 13 18:51:21 2025 -0800
+
+    completed #7
+
+[33mcommit ad127ea51e22416593e8b15ffc21a670bf3f96d3[m[33m ([m[1;31morigin/user/arynrosh[m[33m, [m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 436ae2c 485d2c5
+Author: Aryan Roshan <arynrosh@gmail.com>
+Date:   Mon Dec 2 17:11:16 2024 -0800
+
+    Merge pull request #10 from OgopogoSolar/user/arynrosh
+    
+    added an alert system file
+
+[33mcommit 485d2c5ac44a096f6824015a2cffac1a114eaf8b[m
+Author: arynrosh <arynrosh@gmail.com>
+Date:   Mon Dec 2 17:09:43 2024 -0800
+
+    added an alert system file
+
+[33mcommit 436ae2c4d6a06812957340f527b2b4664f7c73e0[m
+Merge: 2298d2f 34f2c22
+Author: Aryan Roshan <arynrosh@gmail.com>
+Date:   Sat Nov 30 12:25:26 2024 -0800
+
+    Merge pull request #9 from OgopogoSolar/arynrosh
+    
+    added website contents into main repo
+
+[33mcommit 34f2c2241a88643b9203e25d7758ef393a9efcaf[m
+Author: arynrosh <arynrosh@gmail.com>
+Date:   Sat Nov 30 12:22:14 2024 -0800
+
+    added website contents into main repo
+
+[33mcommit 2298d2f1fe81be15ef84875c21098ccb566f54c6[m
+Merge: 62a443d 75473c0
+Author: Aryan Roshan <arynrosh@gmail.com>
+Date:   Sat Nov 30 11:27:50 2024 -0800
+
+    Merge pull request #8 from OgopogoSolar/arynrosh
+    
+    Added pandas library and TODOs for data logging
+
+[33mcommit 75473c07ec17cefc44de86d14466691f1305adc4[m
+Author: arynrosh <arynrosh@gmail.com>
+Date:   Sat Nov 30 11:27:07 2024 -0800
+
+    - Imported pandas and datetime for telemetry data handling.
+    - Added TODOs for implementing telemetry history logging,
+      CSV export, and DataFrame integration.
+    - Updated main loop with TODOs for logging and saving data.
+
+[33mcommit 62a443dd627e8859cb69b844b73ebcc064e3f7e4[m
+Merge: 905552b d47457b
+Author: Aryan Roshan <arynrosh@gmail.com>
+Date:   Tue Nov 26 22:29:31 2024 -0800
+
+    Merge pull request #6 from OgopogoSolar/arynrosh
+    
+    fixed comment
+
+[33mcommit d47457b847b33bd66828eaff5dd997637b2dd512[m
+Author: arynrosh <arynrosh@gmail.com>
+Date:   Tue Nov 26 22:29:11 2024 -0800
+
+    fixed comment
+
+[33mcommit 905552bd67d3b38568907a2f08c05b604d291c53[m
+Merge: 505056b 4a61e16
+Author: Ogopogo Solar <ogopogosolar@gmail.com>
+Date:   Tue Nov 26 22:24:30 2024 -0800
+
+    Merge pull request #5 from OgopogoSolar/user/arynrosh
+    
+    Added comments with units for each attribute
+
+[33mcommit 4a61e1671366cde4b7bcfc9f11b43144887ab05f[m
+Author: arynrosh <arynrosh@gmail.com>
+Date:   Tue Nov 26 22:23:58 2024 -0800
+
+    Added comments with units for each attribute
+
+[33mcommit 505056b2164df1c7c486f7520e120ab51b640be9[m
+Author: Aryan Roshan <arynrosh@gmail.com>
+Date:   Mon Nov 25 23:48:52 2024 -0800
+
+    Update introduction.py
+
+[33mcommit 7c133e5cb77a4bdf7d5bc945c5f4a2c057f6664c[m
+Author: Aryan Roshan <arynrosh@gmail.com>
+Date:   Mon Nov 25 23:48:05 2024 -0800
+
+    Create readme
+    
+    weird folder stuff
+
+[33mcommit 3cc72c0eacde820cf3b20053ecc8f4a92a4ab609[m
+Merge: cc8e317 da1e6a1
+Author: Aryan Roshan <arynrosh@gmail.com>
+Date:   Mon Nov 25 23:45:25 2024 -0800
+
+    Merge pull request #4 from OgopogoSolar/arynrosh
+    
+    Reverted getter and setter class implementation
+
+[33mcommit da1e6a14fa7faa5c76f5a56474cd10ea0b21b7cf[m
+Author: arynrosh <arynrosh@gmail.com>
+Date:   Mon Nov 25 23:38:31 2024 -0800
+
+    reverted getter and setter class implementation
+
+[33mcommit cc8e3172a4ea38d3dd10d3003fe57e1000d6c751[m
+Author: OrangepylonA <albertzhu048@gmail.com>
+Date:   Mon Nov 25 20:23:16 2024 -0800
+
+    commented some stuff
+
+[33mcommit 9b4939bbf4b119070659fde0746721ab338bdcbd[m
+Author: OrangepylonA <albertzhu048@gmail.com>
+Date:   Mon Nov 25 20:18:49 2024 -0800
+
+    added an update state for data classes
+
+[33mcommit 3dffc482c2b76e6b75f55bc0fcc9176bf4691a99[m
+Merge: b92682e 77355e1
+Author: Aryan Roshan <arynrosh@gmail.com>
+Date:   Mon Nov 25 19:48:16 2024 -0800
+
+    Merge pull request #2 from OgopogoSolar/arynrosh
+    
+    added function.py to use for programs throughout the repository
+
+[33mcommit 77355e1fde07b70f31a5b6b103bccdc3d4abaadf[m[33m ([m[1;31morigin/arynrosh[m[33m)[m
+Author: arynrosh <arynrosh@gmail.com>
+Date:   Mon Nov 25 19:47:43 2024 -0800
+
+    added function.py to use for programs throughout the repository
+
+[33mcommit b92682e712ffe4a1744455a4e2ad05fa671fbd72[m
+Author: OrangepylonA <albertzhu048@gmail.com>
+Date:   Mon Nov 25 18:51:28 2024 -0800
+
+    basic data structures prototype
+
+[33mcommit a636d2e4623e41c1e9509e588ca6c5e09be86027[m
+Author: ContentNootNoot <ryanduduli@gmail.com>
+Date:   Mon Oct 21 19:28:54 2024 -0700
+
+    swtiched from qt5 to 6
+
+[33mcommit 0aa41dfe25cfb17c7a2975295f2c7135c7ec8a62[m
+Merge: e4a5409 25245fc
+Author: Aryan Roshan <arynrosh@gmail.com>
+Date:   Tue Oct 8 08:15:39 2024 -0700
+
+    Merge pull request #1 from OgopogoSolar/arynrosh
+    
+    test file, pyqt5 test
+
+[33mcommit 25245fc9b16be46dd811b74580e5b8952d2011d7[m
+Author: arynrosh <arynrosh@gmail.com>
+Date:   Tue Oct 8 08:15:13 2024 -0700
+
+    test file, pyqt5 test
+
+[33mcommit e4a5409a154d6acdf8995088224d1fdc1adcd648[m
+Author: arynrosh <arynrosh@gmail.com>
+Date:   Tue Oct 8 07:36:40 2024 -0700
+
+    added my name -aryan
+
+[33mcommit 30ddf62b306efc5d067b9599fd25a6d325078a4c[m
+Author: CutieKamin <hawaiifive1989@gmail.com>
+Date:   Mon Sep 23 20:03:34 2024 -0700
+
+    add my name
+
+[33mcommit 47b99138cf5c9386d9004c62ca42595234f77445[m
+Author: OrangepylonA <albertzhu048@gmail.com>
+Date:   Mon Sep 23 19:32:07 2024 -0700
+
+    INtroduction
