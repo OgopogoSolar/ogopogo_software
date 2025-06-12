@@ -1,2 +1,0 @@
-# SolarSite
- Ogopogo Solar Website
